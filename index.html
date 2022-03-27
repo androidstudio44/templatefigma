@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 32px;
+right: 120px;
+top: -26px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-size: 30;
+}
+        body{
+            position: relative;
+width: 1440px;
+height: 2991px;
+
+background: #F9FAFF;
+        }
+        .model{
+            position: absolute;
+width: 130px;
+height: 32px;
+left: 120px;
+top: 12px;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 180%;
+color: #25282B;
+        }
+        .all{
+            display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 486px;
+height: 408px;
+left: 120px;
+top: 110px;
+        }
+        .ui{
+            position: static;
+height: 27px;
+left: 0%;
+right: 0%;
+top: calc(50% - 27px/2 - 190.5px);
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+text-transform: uppercase;
+
+color: #FDC435;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 12px 0px;
+        }
+        .intro{
+            position: static;
+width: 486px;
+height: 154px;
+left: calc(50% - 486px/2);
+top: calc(50% - 154px/2 - 107.5px);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 120%;
+color: #25282B;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 32px 0px;
+        }
+        .about{
+            position: static;
+width: 486px;
+left: calc(50% - 486px/2);
+top: 0%;
+bottom: 0%;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* or 36px */
+
+
+/* font / medium-emphasis */
+
+color: #828282;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 12px 0px;
+        }
+        .project{
+            position: static;
+width: 67px;
+left: calc(50% - 67px/2);
+top: 18.6%;
+bottom: 18.6%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+
+/* font / high-emphasis */
+
+color: #25282B;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+        }
+        .style{
+            display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 24px;
+
+position: static;
+width: 80px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+background: #FDC435;
+border-radius: 2px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 12px;
+        }
+        .ltext{
+            position: static;
+width: 69px;
+left: calc(50% - 69px/2);
+top: 18.6%;
+bottom: 18.6%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+
+/* font / high-emphasis */
+
+color: #25282B;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+  
+        }
+        .border{
+            display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 24px;
+
+position: static;
+width: 115px;
+height: 43px;
+left: 0px;
+top: 0px;
+
+/* brand / yellow */
+
+background: #ffffff;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 12px;
+        }
+        .navbar{
+            display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 28px;
+right: 120px;
+top: 14px;
+        }
+        .obj{
+            position: absolute;
+height: 56px;
+left: 0px;
+right: 0px;
+top: 0px;
+        }
+        .girl{
+            position: absolute;
+width: 720px;
+height: 629px;
+right: 0px;
+bottom: 0px;
+
+background: url(girl.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="obj">
+        <div class="model">Madelyn Torff</div>
+        <div class="navbar">
+            <div>
+            <ul>
+                <li><a class="active" href="#home">About</a></li>
+                <li><a href="#contact">Projects</a></li>
+                <li><a href="#about">Contacts</a></li>
+              </ul>
+            </div>
+        </div>
+</div>
+<div class="all">
+    <div class="ui">
+        UI/UX Designer
+    </div>
+    <div class="intro">Hello, my name is Aman</div>
+    <div class="about">Short text with details about you, 
+        what you do or your professional career.
+         You can add more information on the about page.</div>
+         <div class="style">
+             <div class="project">Projects</div>
+         </div>
+         <div class="border">
+         <div class="ltext">Linkedln</div>
+        </div>
+</div>
+<div class="girl">
+<img src="/images/girl.png" alt="">
+</div>
+</body>
+</html>
